@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CopyTwitterMedia</string>
+    <string name="welcome_message">
+    <![CDATA[
+¡Bienvenido a <b>CopyTwitterMedia</b>!
+<br><br>
+Esta aplicación sirve para copiar los vídeos (o las imágenes) de otros tweets para poder compartirlos en los tweets que tú escribas.
+<br><br>
+Para utilizar esta app solo tienes que pulsar en “Compartir tweet” en Twitter, y buscar una de las siguientes dos opciones:
+<br><br>
+1) “<b>Copiar multimedia</b>”: Esta opción te copia el enlace del vídeo al portapapeles. Esto sirve para cuando quieres twittearlo citando o respondiendo a alguien.
+<br><br>
+2) “<b>Twittear multimedia</b>”: Esta opción te abre Twitter con el enlace del vídeo ya redactado. Esto sirve para cuando quieres twittear un vídeo directamente, sin citar ni responder a nadie.
+<br><br>
+¡Espero que os sea útil!
+<br><br>
+— <b>Anderpri</b>
+    ]]>
+</string>
+</resources>
