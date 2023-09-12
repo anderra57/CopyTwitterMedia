@@ -51,7 +51,7 @@ public class CopyToClipboard extends Activity {
 
     private void handleSharedText(Intent intent) {
         String sharedText = intent.getStringExtra(Intent.EXTRA_TEXT);
-        if (sharedText != null && sharedText.contains("twitter.com")) {
+        if (sharedText != null && (sharedText.contains("twitter.com") || sharedText.contains("x.com"))) {
             String jsonLink = "https://publish.twitter.com/oembed?dnt=true&omit_script=true&url=https://mobile.twitter.com/i/status/";
             String tweetId = sharedText.split("/status/")[1].split("\\?")[0];
 
@@ -93,7 +93,7 @@ public class CopyToClipboard extends Activity {
 
                 int hrefElemsSize = hrefElems.size();
 
-                if (hrefElemsSize == 2 || hrefElemsSize == 3)
+                if (hrefElemsSize > 2)
                     tweetContent = hrefElems.get(hrefElemsSize - 2).text();
                 else {
                     cancel(true);
